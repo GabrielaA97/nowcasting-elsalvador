@@ -1,0 +1,134 @@
+series,name,freq,block_g,block_s,block_r,block_l,months_lag
+GDP,PIB Índices de Volumen Encadenados Año de Referencia 2014 desestacionalizadoTotal,q,1,1,0,0,3
+GDP_AG,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Agricultura Ganadería Silvicultura y Pesca,q,1,1,0,0,3
+GDP_EM,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Explotación de Minas y Canteras,q,1,1,0,0,3
+GDP_IN,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Industrias Manufactureras,q,1,1,0,0,3
+GDP_EG,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Suministro de Electricidad Gas Vapor y Aire Acondicionado,q,1,1,0,0,3
+GDP_AA,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Suministro de Agua Alcantarillados y Gestión de Desechos,q,1,1,0,0,3
+GDP_CO,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Construcción,q,1,1,0,0,3
+GDP_CP,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Comercio al por Mayor y al por Menor Reparación de Vehículos Automotores y Motocicletas,q,1,1,0,0,3
+GDP_TA,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Transporte y Almacenamiento,q,1,1,0,0,3
+GDP_AS,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Actividades de Alojamiento y de Servicio de Comidas,q,1,1,0,0,3
+GDP_IC,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Información y Comunicaciones,q,1,1,0,0,3
+GDP_FS,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Actividades Financieras y de Seguros,q,1,1,0,0,3
+GDP_AI,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Actividades Inmobiliarias,q,1,1,0,0,3
+GDP_AP,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Actividades Profesionales Científicas y Técnicas,q,1,1,0,0,3
+GDP_SA,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Actividades de Servicios Administrativos y de Apoyo,q,1,1,0,0,3
+GDP_PD,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Administración Pública y Defensa Planes de Seguridad Social de Afiliación Obligatoria,q,1,1,0,0,3
+GDP_EN,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Enseñanza,q,1,1,0,0,3
+GDP_SH,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Actividades de Atención de la Salud Humana y de Asistencia Social,q,1,1,0,0,3
+GDP_AE,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Actividades Artísticas de Entretenimiento y Recreativas,q,1,1,0,0,3
+GDP_OA,PIBÍndices de Volumen Encadenados Año de Referencia 2014 desestacionalizado Otras Actividades de Servicios 1/,q,1,1,0,0,3
+CE_TOT_VV,FUSADES  Confianza Empresarial  Todos los sectores  Volumen de Ventas,m,1,1,0,0,1
+CE_TOT_VI,FUSADES  Confianza Empresarial  Todos los sectores  Volumen de Inversiones,m,1,1,0,0,1
+CE_IND_VV,FUSADES  Confianza Empresarial  Industria  Volumen de Ventas,m,1,1,0,0,1
+CE_IND_VI,FUSADES  Confianza Empresarial  Industria  Volumen de Inversiones,m,1,1,0,0,1
+CE_CON_AG,FUSADES  Confianza Empresarial  Construccion  Actividad goblal,m,1,1,0,0,1
+CE_CON_VI,FUSADES  Confianza Empresarial  Construccion  Volumen de Inversiones,m,1,1,0,0,1
+CE_COM_VV,FUSADES  Confianza Empresarial  Comercio  Volumen de Ventas,m,1,1,0,0,1
+CE_COM_VI,FUSADES  Confianza Empresarial  Comercio  Volumen de Inversiones,m,1,1,0,0,1
+CE_SER_VV,FUSADES  Confianza Empresarial  Servicios  Volumen de Ventas,m,1,1,0,0,1
+CE_SER_VI,FUSADES  Confianza Empresarial  Servicios  Volumen de Inversiones,m,1,1,0,0,1
+IPI,BCR Índice de Producción Industrial. Serie Desestacionalizada,m,1,1,0,0,1
+IVAE_TOT,"IVAE_TotalÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados",m,1,1,0,0,1
+IVAE_AG,"IVAEÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados Agricultura Ganadería Silvicultura y Pesca",m,1,1,0,0,1
+IVAE_IN,"IVAEÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados Industrias Manufactureras Explotación de Minas y Canteras y Otras Actividades Industriales",m,1,1,0,0,1
+IVAE_CO,"IVAEÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados Construcción",m,1,1,0,0,1
+IVAE_CT,"IVAEÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados Comercio Transporte y Almacenamiento Actividades de Alojamiento y de Servicio de Comidas",m,1,1,0,0,1
+IVAE_IC,"IVAEÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados Información y Comunicaciones",m,1,1,0,0,1
+IVAE_AF,"IVAEÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados Actividades Financieras y de Seguros",m,1,1,0,0,1
+IVAE_AI,"IVAEÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados Actividades Inmobiliarias",m,1,1,0,0,1
+IVAE_AP,"IVAEÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados Actividades Profesionales Científicas Técnicas Administrativas de Apoyo y Otros Servicios",m,1,1,0,0,1
+IVAE_AA,"IVAEÍndice de Volumen de la Actividad Económica IVAE. Serie Desestacionalizada
+Índices de Volumen Encadenados Actividades de Administración Pública y Defensa Enseñanza Salud y Asistencia Social",m,1,1,0,0,1
+PRO_ENER,Producción de Energía Eléctrica En Miles de kWh,m,1,1,0,0,1
+CON_ENER,Consumo de Energía Eléctrica En Miles de kWh,m,1,1,0,0,1
+CON_APA_CEM,Consumo Aparente de Cemento Miles de Bolsas de 42.5 kg,m,1,1,0,0,1
+TRAN_CAR_AE,Transporte de Carga Aérea Miles de kg,m,1,1,0,0,1
+TRAN_CAR_MR,Transporte de Carga Marítima Miles de Toneladas Métricas,m,1,1,0,0,1
+ISSS_PRIM,Cotizantes ISSS sector primario empleados y empleadoresAgriculturacazasilvicultura y pesca,m,1,1,0,0,1
+ISSS_SEC,Cotizantes ISSS sector secundario empleados y empleadoresIndustrias manufacturerasExplotación de minas y canteras y Otras actividades Industriales Construcción,m,1,1,0,0,1
+ISSS_TER,Cotizantes ISSS sector terciario empleados y empleadoresComerciorestaurantes y hotelesTransportealmacen.Activ de Alojamiento y Servicios de Comida Información y ComunicacionesActividades Financieras y de Seguros Actividades InmobiliariasActividades Profesionales Cientificas Técnicas y de Servicios Admon. de ApoyoServiciosServicio DomésticoActividades no bien especificadas total sector publico,m,1,1,0,0,1
+ENT_PAS,Entrada de Pasajeros Número de Personas,m,1,0,1,0,1
+SAL_PAS,Salida de Pasajeros Número de Personas,m,1,0,1,0,1
+EXP_CO,Exportaciones Café Oro y otros cafés no procesados,m,1,0,1,0,1
+EXP_AG,Exportaciones Agricultura ganadería silvicultura y pescaResto de productos,m,1,0,1,0,1
+EXP_MC,Exportaciones Explotación de minas y cantera,m,1,0,1,0,1
+EXP_AC,Exportaciones Azúcar de caña y demás azúcares,m,1,0,1,0,1
+EXP_CP,Exportaciones Café procesado,m,1,0,1,0,1
+EXP_IM,Exportaciones Industrias manufacturerasResto de productos,m,1,0,1,0,1
+EXP_SE,Exportaciones Suministro de electricidad gas vapor y aire acondicionado,m,1,0,1,0,1
+EXP_CM,Exportaciones Comercio al por mayor y al por menor reparación de vehículos automotores y motocicletas,m,1,0,1,0,1
+EXP_MO,Exportaciones  Maquila de Otros Productos,m,1,0,1,0,1
+EXP_MP,Exportaciones Maquila de Prendas de Vestir de Punto,m,1,0,1,0,1
+EXP_MT,Exportaciones Maquila de Productos Textiles,m,1,0,1,0,1
+IMP_CO,Importaciones Café Oro y otros cafés no procesados,m,1,0,1,0,1
+IMP_AG,Importaciones Agricultura ganadería silvicultura y pescaResto de productos,m,1,0,1,0,1
+IMP_MC,Importaciones Explotación de minas y cantera,m,1,0,1,0,1
+IMP_AC,Importaciones Azúcar de caña y demás azúcares,m,1,0,1,0,1
+IMP_CP,Importaciones Café procesado,m,1,0,1,0,1
+IMP_IM,Importaciones Industrias manufacturerasResto de productos,m,1,0,1,0,1
+IMP_SE,Importaciones Suministro de electricidad gas vapor y aire acondicionado,m,1,0,1,0,1
+IMP_CM,Importaciones Comercio al por mayor y al por menor reparación de vehículos automotores y motocicletas,m,1,0,1,0,1
+IMP_MO,Importaciones  Maquila de Otros Productos,m,1,0,1,0,1
+IMP_MP,Importaciones Maquila de Prendas de Vestir de Punto,m,1,0,1,0,1
+IMP_MT,Importaciones Maquila de Productos Textiles,m,1,0,1,0,1
+IMP_D_BN,Importaciones detalladas Bienes de consumo no duraderos,m,1,0,1,0,1
+IMP_D_BD,Importaciones detalladas Bienes de consumo duraderos,m,1,0,1,0,1
+IMP_D_IM,Importaciones detalladas Bienes intermedios Industria Manufacturera,m,1,0,1,0,1
+IMP_D_BA,Importaciones detalladas Bienes intermedios  Agropecuario,m,1,0,1,0,1
+IMP_D_BC,Importaciones detalladas Bienes intermedios Construcción,m,1,0,1,0,1
+IMP_D_BO,Importaciones detalladas Bienes intermedios Otros,m,1,0,1,0,1
+IMP_D_BM,Importaciones detalladas Bienes de capital Industria Manufacturera,m,1,0,1,0,1
+IMP_D_BT,Importaciones detalladas Bienes de capital Transporte y Comunicación,m,1,0,1,0,1
+IMP_D_BCA,Importaciones detalladas Bienes de capital Agropecuario,m,1,0,1,0,1
+IMP_D_BCC,Importaciones detalladas Bienes de capital Construcción,m,1,0,1,0,1
+IMP_D_BIC,Importaciones detalladas Bienes de capital Comercio,m,1,0,1,0,1
+IMP_D_BCS,Importaciones detalladas Bienes de capital Servicios,m,1,0,1,0,1
+IMP_D_BE,Importaciones detalladas Bienes de capital Electricidad Agua y Servicios,m,1,0,1,0,1
+IMP_D_BCB,Importaciones detalladas Bienes de capital Banca,m,1,0,1,0,1
+IMP_D_MA,Importaciones detalladas Maquila,m,1,0,1,0,1
+REM,Remesas,m,1,0,1,0,1
+UNEM_US,Unemployment Rate US Percent Monthly Seasonally Adjusted,m,1,0,1,0,1
+UNEM_US_LA,Unemployment Rate  Hispanic or Latino Percent Monthly Seasonally Adjusted,m,1,0,1,0,1
+EFFR_US,Effective Federal Funds Rate Percent Monthly Not Seasonally Adjusted,m,1,0,1,0,0
+IPI_US,Industrial Production Index Index 2017100 Monthly Seasonally Adjusted,m,1,0,1,0,1
+IPM_US,Industrial Production Manufacturing NAICS Index 2017100 Monthly Seasonally Adjusted,m,1,0,1,0,1
+MTB_6,6Month Treasury Bill Secondary Market Rate Percent Monthly Not Seasonally Adjusted,m,1,0,1,0,0
+INGT_ISR,Ingresos tributarios SPNF Impuesto Sobre la Renta Neto,m,1,0,0,1,1
+INGT_TRP,Ingresos tributarios SPNF Transferencia de Propiedades,m,1,0,0,1,1
+INGT_IMP,Ingresos tributarios SPNF Importaciones,m,1,0,0,1,1
+INGT_COP,Ingresos tributarios SPNF Consumo de Productos,m,1,0,0,1,1
+INGT_IVA,Ingresos tributarios SPNF Impuesto al Valor Agregado IVA neto,m,1,0,0,1,1
+INGT_OTR,Ingresos tributarios SPNF Otros,m,1,0,0,1,1
+INGT_FOV,Ingresos tributarios SPNF Contribuciones Especiales FOVIAL,m,1,0,0,1,1
+INGC_CSS,Ingresos corrientes SPNF  Contribuciones a la Seguridad Social,m,1,0,0,1,1
+INGC_NOT,Ingresos corrientes SNPF No Tributarios,m,1,0,0,1,1
+INGC_SEM,Ingresos corrientes SPNF Superávit de Operación de Empresas Públicas,m,1,0,0,1,1
+INGC_TRP,Ingresos corrientes SPNF Transferencias de Financieras Públicas,m,1,0,0,1,1
+GPC,Gasto publico de consumo SPF,m,1,0,0,1,1
+GIP,Inversion publica SPNF,m,1,0,0,1,1
+BFG,Balance fiscal global excluyendo donaciones SPNF,m,1,0,0,1,1
+M3,M3,m,1,0,0,1,1
+CTC,Credito de consumo tarjetas de credito,m,1,0,0,1,1
+CCO,Credito de consumo otros,m,1,0,0,1,1
+CCV,Credito para vivienda,m,1,0,0,1,1
+CAG,Credito para  Agricultura ganadería silvicultura caza y pesca,m,1,0,0,1,1
+CCON,Credito para construccion,m,1,0,0,1,1
+CPI,Credito para industria,m,1,0,0,1,1
+CCR,Credito para Comercio restaurantes y hoteles,m,1,0,0,1,1
+CTA,Credito para Transporte  almacenamiento y comunicaciones,m,1,0,0,1,1
+COS,Credito para Otros servicios,m,1,0,0,1,1
+COPN,Credito Otros préstamos no clasificados,m,1,0,0,1,1
+TIP_30,Tasa de interes pasiva 30 dias,m,1,0,0,1,1
+TIP_180,Tasa de interes pasiva 180 dias,m,1,0,0,1,1
+TPR1,Tasa de prestamos a un ano,m,1,0,0,1,1
