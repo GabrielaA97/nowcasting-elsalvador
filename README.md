@@ -1,4 +1,4 @@
-# Nowcasting GDP in Times of Crisis and Non-Crisis: A Comparative Study of Econometric and Machine Learning Models in El Salvador
+# Nowcasting GDP in a Small Open Economy: Mixed-Frequency Econometric and Machine Learning Evidence from El Salvador
 
 **Author:** Gabriela Sulamita Aquino Calderón
 **Affiliation:** MSc Data Science for Economics, University of Liverpool
