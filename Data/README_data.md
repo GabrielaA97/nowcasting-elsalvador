@@ -145,3 +145,30 @@ Exceptions:
 - Series already in rate/index form: levels or first differences as appropriate
 
 See `Models/prepare_data_v2.R` for the complete transformation pipeline.
+
+---
+
+## November 2026 update: running the full pipeline
+
+1. **Recalculate the Excel formulas** (open and save in Excel, or
+   `soffice --headless --convert-to xlsx`). If the workbook was edited by a
+   script, the formula tabs (`MAIN-RAW-1`, `MAIN-DEFLATED`) keep stale cached
+   values until recalculated.
+2. Export `MAIN-DEFLATED` to `Data/SLV_nowcasting_data_mq.csv` (columns
+   `date` + the 123 series in `meta_data_v2.csv`) and run
+   `Rscript Data/prepare_data_v2.R`.
+3. Build the 107-series dataset:
+   `python Data/apply_series_selection.py <full_Data_dir> <reduced_Data_dir>`.
+4. ML models and benchmarks (evaluation 2020Q1–2026Q1 plus the 2026Q2 nowcast):
+   ```bash
+   python Models/ml_nowcast_v2.py --base $ESA_BASE_DIR --out <dir> \
+       --cv tscv --impute regression --models ridge,lasso,rf,xgb,bench \
+       --test-end 2026-03-01 --nowcast-date 2026-06-01
+   ```
+5. MIDAS and DFM:
+   ```bash
+   export ESA_TEST_END=2026-06-01
+   Rscript Models/MIDAS.R
+   ESA_DFM_REESTIMATE=annual Rscript Models/DMF.R   # or: every | once
+   ```
+6. `python Evaluation/04_updated_evaluation.py <dir> $ESA_BASE_DIR <out_dir>`

@@ -100,11 +100,13 @@ TARGET_VARIABLE <- "GDP"
 LAGS            <- c(-2L, -1L, 0L)         # only genuine nowcast vintages
 TRAIN_START     <- as.Date("2005-01-01")
 TEST_START      <- as.Date("2020-03-01")   # 2020Q1
-TEST_END        <- as.Date("2024-06-01")   # 2024Q2
+# Set ESA_TEST_END (e.g. "2026-06-01") to extend the evaluation; quarters
+# without published GDP are still nowcast (actual = NA).
+TEST_END        <- as.Date(Sys.getenv("ESA_TEST_END", "2024-06-01"))
 CRISIS_START    <- as.Date("2020-03-01")   # 2020Q1
 CRISIS_END      <- as.Date("2021-06-01")   # 2021Q2
 NORMAL_START    <- as.Date("2021-09-01")   # 2021Q3
-NORMAL_END      <- as.Date("2024-06-01")   # 2024Q2
+NORMAL_END      <- TEST_END                  # 2024Q2 in the thesis design
 
 # GDP publication lag in months. Used to set training cutoff explicitly
 # (Option A, matches ARMA benchmark and DMF.R).

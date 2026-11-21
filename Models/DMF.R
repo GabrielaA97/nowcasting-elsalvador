@@ -66,11 +66,13 @@ TARGET_VARIABLE <- "GDP"
 LAGS            <- c(-2L, -1L, 0L)    # only genuine nowcast vintages
 TRAIN_START     <- as.Date("2005-01-01")
 TEST_START      <- as.Date("2020-03-01")   # 2020Q1
-TEST_END        <- as.Date("2024-06-01")   # 2024Q2
+# Set ESA_TEST_END (e.g. "2026-06-01") to extend the evaluation; quarters
+# without published GDP are still nowcast (actual = NA).
+TEST_END        <- as.Date(Sys.getenv("ESA_TEST_END", "2024-06-01"))
 CRISIS_START    <- as.Date("2020-03-01")   # 2020Q1
 CRISIS_END      <- as.Date("2021-06-01")   # 2021Q2
 NORMAL_START    <- as.Date("2021-09-01")   # 2021Q3
-NORMAL_END      <- as.Date("2024-06-01")   # 2024Q2
+NORMAL_END      <- TEST_END                  # 2024Q2 in the thesis design
 
 # GDP publication lag in months. Used to set training cutoff explicitly
 # (Option A, matches ARMA benchmark).
@@ -82,12 +84,23 @@ GDP_PUB_LAG <- 3L
 # 100 is sufficient for most DFMs — the log-likelihood change is already
 # below 0.05% at iteration 100. Using 500 multiplies runtime by 5x.
 # Compare RMSE at 100 vs 500 iterations — if difference < 0.001, keep 100.
-DFM_MAX_ITER <- 100
+DFM_MAX_ITER <- as.integer(Sys.getenv("ESA_DFM_MAX_ITER", "100"))
 
 # ROLLING=TRUE  : re-estimate DFM at each origin (methodologically correct)
 # ROLLING=FALSE : estimate once on first training window, apply to all origins
 #                 (faster, document as computational constraint in paper)
 ROLLING <- as.logical(Sys.getenv("ESA_DFM_ROLLING", "TRUE"))  # override via env var
+
+# REESTIMATE controls how often the EM step is re-run (expanding window):
+#   "every"  : at every origin (same as ROLLING=TRUE, thesis design)
+#   "annual" : at the first origin and then at every Q1 origin, i.e. once a
+#              year with data through the previous December; in between, the
+#              parameters are held fixed and only the Kalman filter is run on
+#              the new vintage (ragged edge and mixed frequency unchanged)
+#   "once"   : at the first origin only (same as ROLLING=FALSE)
+REESTIMATE <- Sys.getenv("ESA_DFM_REESTIMATE",
+                         if (ROLLING) "every" else "once")
+stopifnot(REESTIMATE %in% c("every", "annual", "once"))
 
 # =============================================================================
 # 2. HELPER FUNCTIONS
@@ -234,7 +247,7 @@ cat("Running rolling-origin DFM evaluation...\n")
 cat("  Test window  :", as.character(TEST_START),
     "to", as.character(TEST_END), "\n")
 cat("  Vintages     :", paste(LAGS, collapse = ", "), "\n")
-cat("  Rolling      :", ROLLING, "\n")
+cat("  Re-estimate  :", REESTIMATE, "\n")
 cat("  Max EM iter  :", DFM_MAX_ITER, "\n\n")
 
 # Storage
@@ -286,7 +299,9 @@ for (i in seq_along(test_dates)) {
   #   If estimation succeeds  → update output_dfm AND last_successful_train_cutoff
   #   If estimation fails     → keep previous output_dfm (fallback)
   
-  should_estimate <- ROLLING || is.null(output_dfm)
+  should_estimate <- is.null(output_dfm) ||
+    REESTIMATE == "every" ||
+    (REESTIMATE == "annual" && as.integer(format(nowcast_date, "%m")) == 3L)
   
   if (should_estimate) {
     output_dfm_new <- tryCatch({
