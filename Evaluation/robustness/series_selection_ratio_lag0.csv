@@ -1,0 +1,8 @@
+model,full,crisis,normal
+ARMA,1.0,1.0,1.0
+DFM,1.303,1.333,0.927
+MIDAS,0.971,0.971,0.996
+Ridge,0.991,0.993,0.928
+Lasso,1.299,1.308,0.931
+Random Forest,0.994,0.993,1.08
+XGBoost,0.999,1.002,0.898
