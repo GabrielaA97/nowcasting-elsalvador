@@ -41,7 +41,7 @@ library(nowcastDFM)
 # 0. PATHS
 # =============================================================================
 
-BASE_DIR  <- file.path(path.expand("~"), "Desktop", "ESA-gdp-nowcasting")
+BASE_DIR  <- Sys.getenv("ESA_BASE_DIR", file.path(path.expand("~"), "Desktop", "ESA-gdp-nowcasting"))
 DATA_DIR  <- file.path(BASE_DIR, "Data")
 MODEL_DIR <- file.path(BASE_DIR, "Models")
 OUT_DIR   <- file.path(MODEL_DIR, "results", "dfm")
@@ -87,7 +87,7 @@ DFM_MAX_ITER <- 100
 # ROLLING=TRUE  : re-estimate DFM at each origin (methodologically correct)
 # ROLLING=FALSE : estimate once on first training window, apply to all origins
 #                 (faster, document as computational constraint in paper)
-ROLLING <- TRUE
+ROLLING <- as.logical(Sys.getenv("ESA_DFM_ROLLING", "TRUE"))  # override via env var
 
 # =============================================================================
 # 2. HELPER FUNCTIONS

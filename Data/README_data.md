@@ -30,6 +30,56 @@ Contains month-on-month growth rates for all 123 indicators, 2005M1–2024M6.
 
 Original mixed-frequency panel before transformation.
 
+### `series_selection.csv` — Series selection for the 2026 update (included)
+
+Flags which of the 123 indicators enter the updated dataset (November 2026
+update, data through 2026M6). One row per series:
+
+| Column | Description |
+|---|---|
+| `series` | Variable code (matches `meta_data_v2.csv`) |
+| `source` | Publishing institution |
+| `last_obs_nov2026` | Last month with data in the November 2026 update |
+| `include` | 1 = kept, 0 = excluded |
+| `exclusion_reason` | Why the series was excluded |
+
+16 series are excluded, leaving 107:
+
+- **FUSADES business confidence (`CE_*`, 10 series):** no comparable public
+  data after 2024M6.
+- **ISSS contributors (`ISSS_*`, 3 series):** no comparable public data after
+  2023M12.
+- **`INGC_TRP`, `TPR1`:** not updated after 2024M6.
+- **`IMP_D_BCB`:** near-zero values with four months at exactly 0.0, so the
+  growth rate is undefined.
+
+Imputing two or more years of missing data with seasonal averages (as the
+Excel tab `MAIN-RAW-1` would do) would feed fabricated values to the models,
+so these series are dropped rather than filled.
+
+`apply_series_selection.py` builds the reduced dataset from a `data_tf.csv`:
+
+```bash
+python Data/apply_series_selection.py <input_Data_dir> <output_Data_dir>
+```
+
+The robustness check comparing both sets on the original evaluation sample is
+`Evaluation/03_series_selection_robustness.py`.
+
+### Running from another folder
+
+All scripts read their paths from the environment variable `ESA_BASE_DIR`
+(default `~/Desktop/ESA-gdp-nowcasting`), so the same code runs on the desktop
+or in a cloud workspace:
+
+```bash
+export ESA_BASE_DIR=/path/to/project   # must contain Data/ and Models/
+Rscript Data/prepare_data_v2.R
+```
+
+`Models/DMF.R` also reads `ESA_DFM_ROLLING` (`TRUE` by default) to switch
+between re-estimating the DFM at every origin and estimating it once.
+
 ---
 
 ## How to Obtain the Raw Data

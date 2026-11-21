@@ -85,3 +85,6 @@ Thumbs.db
 *.synctex.gz
 *.toc
 *.out
+
+# Office lock files
+~$*

@@ -75,7 +75,7 @@ library(imputeTS)
 # 0. PATHS
 # =============================================================================
 
-BASE_DIR   <- file.path(path.expand("~"), "Desktop", "ESA-gdp-nowcasting")
+BASE_DIR   <- Sys.getenv("ESA_BASE_DIR", file.path(path.expand("~"), "Desktop", "ESA-gdp-nowcasting"))
 DATA_DIR   <- file.path(BASE_DIR, "Data")
 MODEL_DIR  <- file.path(BASE_DIR, "Models")
 OUT_DIR    <- file.path(MODEL_DIR, "results", "midas")
@@ -205,11 +205,25 @@ data_full     <- read_csv(PATH_DATA, show_col_types = FALSE) %>%
   dplyr::mutate(date = as.Date(date)) %>%
   dplyr::arrange(date)
 
-# Validate that all VARS_MIDAS exist in the data
+# Validate that all VARS_MIDAS exist in the data.
+# Series excluded via Data/series_selection.csv (reduced dataset) are
+# dropped with a warning; any other missing variable is an error.
 missing_vars <- setdiff(VARS_MIDAS, colnames(data_full))
 if (length(missing_vars) > 0) {
-  stop("Variables not found in data_tf.csv: ",
-       paste(missing_vars, collapse = ", "))
+  sel_path <- file.path(DATA_DIR, "series_selection.csv")
+  excluded <- character(0)
+  if (file.exists(sel_path)) {
+    sel      <- read_csv(sel_path, show_col_types = FALSE)
+    excluded <- sel$series[sel$include == 0]
+  }
+  unexpected <- setdiff(missing_vars, excluded)
+  if (length(unexpected) > 0) {
+    stop("Variables not found in data_tf.csv: ",
+         paste(unexpected, collapse = ", "))
+  }
+  warning("Dropping excluded series from VARS_MIDAS: ",
+          paste(missing_vars, collapse = ", "))
+  VARS_MIDAS <- setdiff(VARS_MIDAS, missing_vars)
 }
 
 # Subset to selected variables

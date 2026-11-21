@@ -36,11 +36,13 @@ filter <- dplyr::filter
 # ── 0. Configuration ──────────────────────────────────────────────────────────
 
 # ── Paths — edit only this block ──────────────────────────────────────────────
-PATH_DATA <- "~/Desktop/ESA-gdp-nowcasting/Data/SLV_nowcasting_data_mq.csv"
-PATH_META <- "~/Desktop/ESA-gdp-nowcasting/Data/meta_data_v2.csv"
+# Set ESA_BASE_DIR to run from another location (e.g. a cloud workspace)
+BASE_DIR  <- Sys.getenv("ESA_BASE_DIR", "~/Desktop/ESA-gdp-nowcasting")
+PATH_DATA <- file.path(BASE_DIR, "Data", "SLV_nowcasting_data_mq.csv")
+PATH_META <- file.path(BASE_DIR, "Data", "meta_data_v2.csv")
 
 # Output goes to the same Data folder so all model scripts can find it
-PATH_OUT  <- "~/Desktop/ESA-gdp-nowcasting/Data/data_tf.csv"
+PATH_OUT  <- file.path(BASE_DIR, "Data", "data_tf.csv")
 
 # Variables that should NOT be growth-rate transformed.
 # Rationale: interest rates are level stationary (or near-stationary) and
