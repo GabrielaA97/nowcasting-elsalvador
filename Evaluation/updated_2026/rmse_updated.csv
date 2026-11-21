@@ -1,0 +1,193 @@
+model,config,period,vintage,n,RMSE,rel_AR
+AR,-,crisis,lag_-2,6,0.138811,1.0
+AR,-,crisis,lag_-1,6,0.138811,1.0
+AR,-,crisis,lag_+0,6,0.138811,1.0
+AR,-,normal,lag_-2,12,0.008303,1.0
+AR,-,normal,lag_-1,12,0.008303,1.0
+AR,-,normal,lag_+0,12,0.008303,1.0
+AR,-,recent,lag_-2,7,0.008756,1.0
+AR,-,recent,lag_-1,7,0.008756,1.0
+AR,-,recent,lag_+0,7,0.008756,1.0
+AR,-,full,lag_-2,25,0.068403,1.0
+AR,-,full,lag_-1,25,0.068403,1.0
+AR,-,full,lag_+0,25,0.068403,1.0
+HistMean,-,crisis,lag_-2,6,0.103716,0.747171
+HistMean,-,crisis,lag_-1,6,0.103716,0.747171
+HistMean,-,crisis,lag_+0,6,0.103716,0.747171
+HistMean,-,normal,lag_-2,12,0.008303,1.0
+HistMean,-,normal,lag_-1,12,0.008303,1.0
+HistMean,-,normal,lag_+0,12,0.008303,1.0
+HistMean,-,recent,lag_-2,7,0.008756,1.0
+HistMean,-,recent,lag_-1,7,0.008756,1.0
+HistMean,-,recent,lag_+0,7,0.008756,1.0
+HistMean,-,full,lag_-2,25,0.051344,0.75061
+HistMean,-,full,lag_-1,25,0.051344,0.75061
+HistMean,-,full,lag_+0,25,0.051344,0.75061
+Lasso,holdout_mean,crisis,lag_-2,6,0.100454,0.723671
+Lasso,holdout_mean,crisis,lag_-1,6,0.100767,0.725929
+Lasso,holdout_mean,crisis,lag_+0,6,0.10409,0.74987
+Lasso,holdout_mean,normal,lag_-2,12,0.008504,1.024128
+Lasso,holdout_mean,normal,lag_-1,12,0.007741,0.932309
+Lasso,holdout_mean,normal,lag_+0,12,0.008809,1.060946
+Lasso,holdout_mean,recent,lag_-2,7,0.009101,1.039336
+Lasso,holdout_mean,recent,lag_-1,7,0.009555,1.091218
+Lasso,holdout_mean,recent,lag_+0,7,0.00946,1.080324
+Lasso,holdout_mean,full,lag_-2,25,0.049797,0.727988
+Lasso,holdout_mean,full,lag_-1,25,0.049913,0.729684
+Lasso,holdout_mean,full,lag_+0,25,0.051601,0.754363
+Lasso,holdout_regression,crisis,lag_-2,6,0.099013,0.713289
+Lasso,holdout_regression,crisis,lag_-1,6,0.098977,0.71303
+Lasso,holdout_regression,crisis,lag_+0,6,0.101907,0.734141
+Lasso,holdout_regression,normal,lag_-2,12,0.00844,1.016517
+Lasso,holdout_regression,normal,lag_-1,12,0.007788,0.93789
+Lasso,holdout_regression,normal,lag_+0,12,0.0088,1.059807
+Lasso,holdout_regression,recent,lag_-2,7,0.009347,1.067481
+Lasso,holdout_regression,recent,lag_-1,7,0.009766,1.11528
+Lasso,holdout_regression,recent,lag_+0,7,0.009497,1.084586
+Lasso,holdout_regression,full,lag_-2,25,0.049107,0.717903
+Lasso,holdout_regression,full,lag_-1,25,0.049061,0.717225
+Lasso,holdout_regression,full,lag_+0,25,0.050545,0.738932
+Lasso,tscv_mean,crisis,lag_-2,6,0.100246,0.722173
+Lasso,tscv_mean,crisis,lag_-1,6,0.08121,0.585039
+Lasso,tscv_mean,crisis,lag_+0,6,0.084399,0.608014
+Lasso,tscv_mean,normal,lag_-2,12,0.008553,1.030085
+Lasso,tscv_mean,normal,lag_-1,12,0.008731,1.051565
+Lasso,tscv_mean,normal,lag_+0,12,0.008891,1.070742
+Lasso,tscv_mean,recent,lag_-2,7,0.009171,1.047367
+Lasso,tscv_mean,recent,lag_-1,7,0.008986,1.026179
+Lasso,tscv_mean,recent,lag_+0,7,0.009406,1.074156
+Lasso,tscv_mean,full,lag_-2,25,0.049704,0.72663
+Lasso,tscv_mean,full,lag_-1,25,0.040522,0.592395
+Lasso,tscv_mean,full,lag_+0,25,0.042099,0.615445
+Lasso,tscv_regression,crisis,lag_-2,6,0.10005,0.720762
+Lasso,tscv_regression,crisis,lag_-1,6,0.086059,0.61997
+Lasso,tscv_regression,crisis,lag_+0,6,0.090096,0.649053
+Lasso,tscv_regression,normal,lag_-2,12,0.008859,1.066934
+Lasso,tscv_regression,normal,lag_-1,12,0.009138,1.100559
+Lasso,tscv_regression,normal,lag_+0,12,0.009489,1.14283
+Lasso,tscv_regression,recent,lag_-2,7,0.009271,1.058741
+Lasso,tscv_regression,recent,lag_-1,7,0.008962,1.023478
+Lasso,tscv_regression,recent,lag_+0,7,0.009324,1.064816
+Lasso,tscv_regression,full,lag_-2,25,0.04964,0.725695
+Lasso,tscv_regression,full,lag_-1,25,0.042896,0.627099
+Lasso,tscv_regression,full,lag_+0,25,0.044897,0.656351
+MIDAS,-,crisis,lag_-2,6,0.095983,0.691463
+MIDAS,-,crisis,lag_-1,6,0.088693,0.638946
+MIDAS,-,crisis,lag_+0,6,0.087039,0.62703
+MIDAS,-,normal,lag_-2,12,0.009519,1.146432
+MIDAS,-,normal,lag_-1,12,0.008508,1.024708
+MIDAS,-,normal,lag_+0,12,0.008013,0.964994
+MIDAS,-,recent,lag_-2,7,0.010687,1.2205
+MIDAS,-,recent,lag_-1,7,0.008654,0.988324
+MIDAS,-,recent,lag_+0,7,0.009569,1.092778
+MIDAS,-,full,lag_-2,25,0.047818,0.699054
+MIDAS,-,full,lag_-1,25,0.044087,0.644515
+MIDAS,-,full,lag_+0,25,0.043297,0.632967
+Random Forest,holdout_mean,crisis,lag_-2,6,0.102008,0.734871
+Random Forest,holdout_mean,crisis,lag_-1,6,0.101701,0.732658
+Random Forest,holdout_mean,crisis,lag_+0,6,0.102273,0.736778
+Random Forest,holdout_mean,normal,lag_-2,12,0.008675,1.044826
+Random Forest,holdout_mean,normal,lag_-1,12,0.008575,1.032784
+Random Forest,holdout_mean,normal,lag_+0,12,0.009051,1.090042
+Random Forest,holdout_mean,recent,lag_-2,7,0.009334,1.065981
+Random Forest,holdout_mean,recent,lag_-1,7,0.009148,1.044719
+Random Forest,holdout_mean,recent,lag_+0,7,0.009882,1.128564
+Random Forest,holdout_mean,full,lag_-2,25,0.050576,0.739373
+Random Forest,holdout_mean,full,lag_-1,25,0.050409,0.736939
+Random Forest,holdout_mean,full,lag_+0,25,0.050764,0.742132
+Random Forest,tscv_regression,crisis,lag_-2,6,0.102226,0.736436
+Random Forest,tscv_regression,crisis,lag_-1,6,0.102118,0.73566
+Random Forest,tscv_regression,crisis,lag_+0,6,0.102509,0.738475
+Random Forest,tscv_regression,normal,lag_-2,12,0.008467,1.019734
+Random Forest,tscv_regression,normal,lag_-1,12,0.008554,1.030222
+Random Forest,tscv_regression,normal,lag_+0,12,0.008917,1.073862
+Random Forest,tscv_regression,recent,lag_-2,7,0.008456,0.965682
+Random Forest,tscv_regression,recent,lag_-1,7,0.008013,0.915149
+Random Forest,tscv_regression,recent,lag_+0,7,0.008974,1.024877
+Random Forest,tscv_regression,full,lag_-2,25,0.050621,0.740032
+Random Forest,tscv_regression,full,lag_-1,25,0.050555,0.739077
+Random Forest,tscv_regression,full,lag_+0,25,0.05082,0.742941
+RandomWalk,-,crisis,lag_-2,6,0.155322,1.118946
+RandomWalk,-,crisis,lag_-1,6,0.155322,1.118946
+RandomWalk,-,crisis,lag_+0,6,0.155322,1.118946
+RandomWalk,-,normal,lag_-2,12,0.012536,1.509725
+RandomWalk,-,normal,lag_-1,12,0.012536,1.509725
+RandomWalk,-,normal,lag_+0,12,0.012536,1.509725
+RandomWalk,-,recent,lag_-2,7,0.014515,1.657608
+RandomWalk,-,recent,lag_-1,7,0.014515,1.657608
+RandomWalk,-,recent,lag_+0,7,0.014515,1.657608
+RandomWalk,-,full,lag_-2,25,0.07697,1.125241
+RandomWalk,-,full,lag_-1,25,0.07697,1.125241
+RandomWalk,-,full,lag_+0,25,0.07697,1.125241
+Ridge,holdout_mean,crisis,lag_-2,6,0.082616,0.595167
+Ridge,holdout_mean,crisis,lag_-1,6,0.06903,0.497297
+Ridge,holdout_mean,crisis,lag_+0,6,0.071381,0.514228
+Ridge,holdout_mean,normal,lag_-2,12,0.00993,1.195913
+Ridge,holdout_mean,normal,lag_-1,12,0.008232,0.991448
+Ridge,holdout_mean,normal,lag_+0,12,0.009842,1.185353
+Ridge,holdout_mean,recent,lag_-2,7,0.008518,0.972799
+Ridge,holdout_mean,recent,lag_-1,7,0.008426,0.962263
+Ridge,holdout_mean,recent,lag_+0,7,0.008875,1.013507
+Ridge,holdout_mean,full,lag_-2,25,0.041301,0.603781
+Ridge,holdout_mean,full,lag_-1,25,0.034584,0.50559
+Ridge,holdout_mean,full,lag_+0,25,0.035936,0.525354
+Ridge,holdout_regression,crisis,lag_-2,6,0.082716,0.595891
+Ridge,holdout_regression,crisis,lag_-1,6,0.069114,0.497896
+Ridge,holdout_regression,crisis,lag_+0,6,0.071467,0.514848
+Ridge,holdout_regression,normal,lag_-2,12,0.009876,1.189391
+Ridge,holdout_regression,normal,lag_-1,12,0.008062,0.970923
+Ridge,holdout_regression,normal,lag_+0,12,0.009702,1.16842
+Ridge,holdout_regression,recent,lag_-2,7,0.008712,0.994978
+Ridge,holdout_regression,recent,lag_-1,7,0.008428,0.962474
+Ridge,holdout_regression,recent,lag_+0,7,0.008723,0.996136
+Ridge,holdout_regression,full,lag_-2,25,0.041354,0.60456
+Ridge,holdout_regression,full,lag_-1,25,0.034605,0.505893
+Ridge,holdout_regression,full,lag_+0,25,0.035948,0.525534
+Ridge,tscv_mean,crisis,lag_-2,6,0.084138,0.606134
+Ridge,tscv_mean,crisis,lag_-1,6,0.075556,0.54431
+Ridge,tscv_mean,crisis,lag_+0,6,0.077179,0.555997
+Ridge,tscv_mean,normal,lag_-2,12,0.009026,1.087031
+Ridge,tscv_mean,normal,lag_-1,12,0.008651,1.04184
+Ridge,tscv_mean,normal,lag_+0,12,0.00907,1.092304
+Ridge,tscv_mean,recent,lag_-2,7,0.009675,1.10495
+Ridge,tscv_mean,recent,lag_-1,7,0.007957,0.908677
+Ridge,tscv_mean,recent,lag_+0,7,0.00894,1.021007
+Ridge,tscv_mean,full,lag_-2,25,0.042004,0.614063
+Ridge,tscv_mean,full,lag_-1,25,0.037733,0.55162
+Ridge,tscv_mean,full,lag_+0,25,0.038619,0.564579
+Ridge,tscv_regression,crisis,lag_-2,6,0.084259,0.607001
+Ridge,tscv_regression,crisis,lag_-1,6,0.075591,0.544559
+Ridge,tscv_regression,crisis,lag_+0,6,0.077198,0.55614
+Ridge,tscv_regression,normal,lag_-2,12,0.009063,1.091541
+Ridge,tscv_regression,normal,lag_-1,12,0.008627,1.038957
+Ridge,tscv_regression,normal,lag_+0,12,0.009032,1.087782
+Ridge,tscv_regression,recent,lag_-2,7,0.010276,1.173584
+Ridge,tscv_regression,recent,lag_-1,7,0.008468,0.967012
+Ridge,tscv_regression,recent,lag_+0,7,0.009231,1.054228
+Ridge,tscv_regression,full,lag_-2,25,0.042106,0.615549
+Ridge,tscv_regression,full,lag_-1,25,0.037778,0.552278
+Ridge,tscv_regression,full,lag_+0,25,0.038644,0.564937
+XGBoost,holdout_mean,crisis,lag_-2,6,0.102117,0.735656
+XGBoost,holdout_mean,crisis,lag_-1,6,0.102902,0.741306
+XGBoost,holdout_mean,crisis,lag_+0,6,0.103705,0.747094
+XGBoost,holdout_mean,normal,lag_-2,12,0.009995,1.203789
+XGBoost,holdout_mean,normal,lag_-1,12,0.00995,1.198352
+XGBoost,holdout_mean,normal,lag_+0,12,0.01074,1.293455
+XGBoost,holdout_mean,recent,lag_-2,7,0.010251,1.170678
+XGBoost,holdout_mean,recent,lag_-1,7,0.008952,1.022362
+XGBoost,holdout_mean,recent,lag_+0,7,0.00921,1.05183
+XGBoost,holdout_mean,full,lag_-2,25,0.050795,0.742574
+XGBoost,holdout_mean,full,lag_-1,25,0.051101,0.747047
+XGBoost,holdout_mean,full,lag_+0,25,0.051578,0.754022
+XGBoost,tscv_regression,crisis,lag_-2,6,0.102065,0.735282
+XGBoost,tscv_regression,crisis,lag_-1,6,0.102988,0.741925
+XGBoost,tscv_regression,crisis,lag_+0,6,0.103927,0.748692
+XGBoost,tscv_regression,normal,lag_-2,12,0.009201,1.108096
+XGBoost,tscv_regression,normal,lag_-1,12,0.009553,1.150463
+XGBoost,tscv_regression,normal,lag_+0,12,0.010495,1.264022
+XGBoost,tscv_regression,recent,lag_-2,7,0.008957,1.022914
+XGBoost,tscv_regression,recent,lag_-1,7,0.007537,0.860699
+XGBoost,tscv_regression,recent,lag_+0,7,0.008113,0.92656
+XGBoost,tscv_regression,full,lag_-2,25,0.050629,0.740149
+XGBoost,tscv_regression,full,lag_-1,25,0.051042,0.746187
+XGBoost,tscv_regression,full,lag_+0,25,0.051609,0.754482

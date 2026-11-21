@@ -1,0 +1,17 @@
+model,config,date,actual,lag_-2,lag_-1,lag_+0
+Lasso,holdout_regression,2026-06-01,,1.07,1.16,1.15
+Lasso,tscv_mean,2026-06-01,,0.74,0.84,0.84
+Ridge,tscv_mean,2026-06-01,,0.95,1.08,1.11
+Lasso,tscv_regression,2026-06-01,,0.74,0.84,0.84
+Random Forest,tscv_regression,2026-06-01,,0.77,0.8,0.82
+Ridge,tscv_regression,2026-06-01,,0.98,1.11,1.13
+Ridge,holdout_regression,2026-06-01,,0.66,0.66,0.66
+Random Forest,holdout_mean,2026-06-01,,0.78,0.61,0.6
+AR,-,2026-06-01,,0.66,0.66,0.66
+HistMean,-,2026-06-01,,0.66,0.66,0.66
+RandomWalk,-,2026-06-01,,0.93,0.93,0.93
+XGBoost,tscv_regression,2026-06-01,,1.11,0.53,0.5
+Ridge,holdout_mean,2026-06-01,,0.66,0.66,0.66
+Lasso,holdout_mean,2026-06-01,,1.06,1.15,1.13
+XGBoost,holdout_mean,2026-06-01,,0.7,0.1,0.07
+MIDAS,-,2026-06-01,,1.05,1.26,1.42

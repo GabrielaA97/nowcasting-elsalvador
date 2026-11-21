@@ -1,0 +1,97 @@
+model,config,period,vintage,ratio_vs_original,DM_p_2s
+Ridge,holdout_regression,crisis,lag_-2,1.0012,0.5966
+Ridge,holdout_regression,crisis,lag_-1,1.0012,0.3524
+Ridge,holdout_regression,crisis,lag_+0,1.0012,0.4431
+Ridge,holdout_regression,normal,lag_-2,0.9945,0.5842
+Ridge,holdout_regression,normal,lag_-1,0.9793,0.2967
+Ridge,holdout_regression,normal,lag_+0,0.9857,0.3105
+Ridge,holdout_regression,recent,lag_-2,1.0228,0.3244
+Ridge,holdout_regression,recent,lag_-1,1.0002,0.9943
+Ridge,holdout_regression,recent,lag_+0,0.9829,0.7457
+Ridge,holdout_regression,full,lag_-2,1.0013,0.4982
+Ridge,holdout_regression,full,lag_-1,1.0006,0.6432
+Ridge,holdout_regression,full,lag_+0,1.0003,0.8299
+Ridge,tscv_mean,crisis,lag_-2,1.0184,0.403
+Ridge,tscv_mean,crisis,lag_-1,1.0945,0.4032
+Ridge,tscv_mean,crisis,lag_+0,1.0812,0.4031
+Ridge,tscv_mean,normal,lag_-2,0.909,0.3537
+Ridge,tscv_mean,normal,lag_-1,1.0508,0.7106
+Ridge,tscv_mean,normal,lag_+0,0.9215,0.4394
+Ridge,tscv_mean,recent,lag_-2,1.1358,0.3819
+Ridge,tscv_mean,recent,lag_-1,0.9443,0.6459
+Ridge,tscv_mean,recent,lag_+0,1.0074,0.9276
+Ridge,tscv_mean,full,lag_-2,1.017,0.3626
+Ridge,tscv_mean,full,lag_-1,1.091,0.3346
+Ridge,tscv_mean,full,lag_+0,1.0747,0.3535
+Ridge,tscv_regression,crisis,lag_-2,1.0199,0.358
+Ridge,tscv_regression,crisis,lag_-1,1.095,0.4019
+Ridge,tscv_regression,crisis,lag_+0,1.0815,0.4036
+Ridge,tscv_regression,normal,lag_-2,0.9127,0.3712
+Ridge,tscv_regression,normal,lag_-1,1.0479,0.7167
+Ridge,tscv_regression,normal,lag_+0,0.9177,0.429
+Ridge,tscv_regression,recent,lag_-2,1.2064,0.3394
+Ridge,tscv_regression,recent,lag_-1,1.0049,0.9741
+Ridge,tscv_regression,recent,lag_+0,1.0402,0.6901
+Ridge,tscv_regression,full,lag_-2,1.0195,0.2942
+Ridge,tscv_regression,full,lag_-1,1.0923,0.3288
+Ridge,tscv_regression,full,lag_+0,1.0753,0.3512
+Lasso,holdout_regression,crisis,lag_-2,0.9857,0.403
+Lasso,holdout_regression,crisis,lag_-1,0.9822,0.4015
+Lasso,holdout_regression,crisis,lag_+0,0.979,0.4436
+Lasso,holdout_regression,normal,lag_-2,0.9926,0.611
+Lasso,holdout_regression,normal,lag_-1,1.006,0.7733
+Lasso,holdout_regression,normal,lag_+0,0.9989,0.8847
+Lasso,holdout_regression,recent,lag_-2,1.0271,0.3047
+Lasso,holdout_regression,recent,lag_-1,1.0221,0.3277
+Lasso,holdout_regression,recent,lag_+0,1.0039,0.5976
+Lasso,holdout_regression,full,lag_-2,0.9861,0.3423
+Lasso,holdout_regression,full,lag_-1,0.9829,0.3441
+Lasso,holdout_regression,full,lag_+0,0.9795,0.3762
+Lasso,tscv_mean,crisis,lag_-2,0.9979,0.8675
+Lasso,tscv_mean,crisis,lag_-1,0.8059,0.3693
+Lasso,tscv_mean,crisis,lag_+0,0.8108,0.3581
+Lasso,tscv_mean,normal,lag_-2,1.0058,0.9358
+Lasso,tscv_mean,normal,lag_-1,1.1279,0.1584
+Lasso,tscv_mean,normal,lag_+0,1.0092,0.9042
+Lasso,tscv_mean,recent,lag_-2,1.0077,0.8905
+Lasso,tscv_mean,recent,lag_-1,0.9404,0.376
+Lasso,tscv_mean,recent,lag_+0,0.9943,0.935
+Lasso,tscv_mean,full,lag_-2,0.9981,0.8546
+Lasso,tscv_mean,full,lag_-1,0.8119,0.3084
+Lasso,tscv_mean,full,lag_+0,0.8158,0.2956
+Lasso,tscv_regression,crisis,lag_-2,0.996,0.8424
+Lasso,tscv_regression,crisis,lag_-1,0.854,0.3425
+Lasso,tscv_regression,crisis,lag_+0,0.8656,0.3565
+Lasso,tscv_regression,normal,lag_-2,1.0418,0.6089
+Lasso,tscv_regression,normal,lag_-1,1.1805,0.0781
+Lasso,tscv_regression,normal,lag_+0,1.0772,0.4659
+Lasso,tscv_regression,recent,lag_-2,1.0187,0.8114
+Lasso,tscv_regression,recent,lag_-1,0.9379,0.2678
+Lasso,tscv_regression,recent,lag_+0,0.9856,0.8204
+Lasso,tscv_regression,full,lag_-2,0.9969,0.8492
+Lasso,tscv_regression,full,lag_-1,0.8594,0.2875
+Lasso,tscv_regression,full,lag_+0,0.8701,0.2979
+Random Forest,tscv_regression,crisis,lag_-2,1.0021,0.4906
+Random Forest,tscv_regression,crisis,lag_-1,1.0041,0.4753
+Random Forest,tscv_regression,crisis,lag_+0,1.0023,0.5977
+Random Forest,tscv_regression,normal,lag_-2,0.976,0.6918
+Random Forest,tscv_regression,normal,lag_-1,0.9975,0.9683
+Random Forest,tscv_regression,normal,lag_+0,0.9852,0.8642
+Random Forest,tscv_regression,recent,lag_-2,0.9059,0.295
+Random Forest,tscv_regression,recent,lag_-1,0.876,0.3883
+Random Forest,tscv_regression,recent,lag_+0,0.9081,0.3501
+Random Forest,tscv_regression,full,lag_-2,1.0009,0.753
+Random Forest,tscv_regression,full,lag_-1,1.0029,0.5653
+Random Forest,tscv_regression,full,lag_+0,1.0011,0.7817
+XGBoost,tscv_regression,crisis,lag_-2,0.9995,0.8733
+XGBoost,tscv_regression,crisis,lag_-1,1.0008,0.8757
+XGBoost,tscv_regression,crisis,lag_+0,1.0021,0.5941
+XGBoost,tscv_regression,normal,lag_-2,0.9205,0.2049
+XGBoost,tscv_regression,normal,lag_-1,0.96,0.6861
+XGBoost,tscv_regression,normal,lag_+0,0.9772,0.7487
+XGBoost,tscv_regression,recent,lag_-2,0.8738,0.3216
+XGBoost,tscv_regression,recent,lag_-1,0.8419,0.5043
+XGBoost,tscv_regression,recent,lag_+0,0.8809,0.6146
+XGBoost,tscv_regression,full,lag_-2,0.9967,0.2823
+XGBoost,tscv_regression,full,lag_-1,0.9988,0.8158
+XGBoost,tscv_regression,full,lag_+0,1.0006,0.8789
