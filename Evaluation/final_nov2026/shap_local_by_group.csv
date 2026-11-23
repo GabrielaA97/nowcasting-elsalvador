@@ -1,0 +1,10 @@
+group,lasso,rf,ridge,xgb
+"Actividad (IVAE, IPI)",-0.005,-0.015,-0.071,-0.047
+"Dinero, crédito y tasas",0.0,0.004,-0.056,-0.059
+"Energía, transporte y construcción",0.0,-0.024,-0.088,-0.043
+Estados Unidos,0.049,0.01,0.105,0.203
+Exportaciones,0.0,0.051,0.002,0.265
+Finanzas públicas,0.0,0.02,-0.157,0.046
+Importaciones,0.0,0.059,0.344,0.121
+PIB sectorial (trimestral),0.0,0.024,0.057,0.017
+Remesas,0.0,0.002,0.008,0.0

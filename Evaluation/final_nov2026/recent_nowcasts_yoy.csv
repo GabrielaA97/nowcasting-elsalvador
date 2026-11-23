@@ -1,0 +1,14 @@
+label,2025T3,2025T4,2026T1,2026T2,2026T3
+AR (BIC),4.5,3.51,4.49,4.01,4.33
+Promedio histórico,4.5,3.51,4.49,4.01,4.33
+Lasso (original),4.59,3.45,4.48,4.2,4.37
+XGBoost (nueva),4.17,4.62,4.65,3.93,4.26
+Lasso (nueva),4.63,3.45,4.48,4.21,4.37
+Random Forest (original),4.27,3.6,4.49,4.23,4.46
+MIDAS,4.44,3.62,4.18,4.66,4.17
+Ridge (nueva),4.73,2.95,4.06,4.01,4.36
+Ridge (original),4.5,2.95,3.8,5.21,4.48
+Random Forest (nueva),3.91,3.46,4.02,4.03,4.27
+XGBoost (original),3.79,4.26,4.29,3.71,4.91
+Random walk,5.28,4.25,4.84,4.27,5.37
+Observado (índice desest.),5.26,3.86,4.76,5.06,
