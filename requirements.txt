@@ -2,7 +2,8 @@
 # requirements.txt — Nowcasting El Salvador GDP
 # Python dependencies for replication
 # =============================================================================
-# Python version: >= 3.9
+# Python version: >= 3.11 (tested on Python 3.13.18 with pandas 3.0.5,
+#   numpy 2.5.3, scikit-learn 1.9.1, statsmodels 0.15.0, xgboost 3.4.1)
 # Install with:   pip install -r requirements.txt
 # =============================================================================
 
